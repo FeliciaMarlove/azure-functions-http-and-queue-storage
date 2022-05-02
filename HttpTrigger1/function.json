@@ -1,0 +1,26 @@
+﻿{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "outputQueueItem",
+      "direction": "out",
+      "type": "queue",
+      "connection": "***THIS_IS_YOUR_STORAGE_ACCOUNT_NAME***",
+      "queueName": "shewrites_queue"
+    }
+  ]
+}

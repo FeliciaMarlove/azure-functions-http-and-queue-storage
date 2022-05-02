@@ -1,0 +1,11 @@
+﻿{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "shewrites_queue",
+      "connection": "***THIS_IS_YOUR_STORAGE_ACCOUNT_NAME"
+    }
+  ]
+}
